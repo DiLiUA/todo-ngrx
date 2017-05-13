@@ -1,0 +1,17 @@
+<section class="todoapp">
+  <header class="header">
+    <h1>{{title | uppercase}}</h1>
+    <sg-add-todo (add)="addTodo($event)" [reset]="addTodoSuccess$ | async"></sg-add-todo>
+  </header>
+
+  <section class="main">
+    <sg-todos [todos]="todos | async" (toggleDone)="toggleDone($event)" (removeTodo)="removeTodo($event)"></sg-todos>
+  </section>
+
+  <footer class="footer">
+    <sg-filters [active]="activeFilter | async"
+                 (changeFilter)="changeFilter($event)">
+    </sg-filters>
+  </footer>
+
+</section>
