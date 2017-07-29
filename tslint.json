@@ -4,6 +4,7 @@
 
   "rules": {
     "ordered-imports": false,
-    "no-import-side-effect": false
+    "no-import-side-effect": false,
+    "no-default-export": false
   }
 }

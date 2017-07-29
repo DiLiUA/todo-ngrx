@@ -1,0 +1,5 @@
+<ul class="filters">
+  <li *ngFor="let f of filters">
+    <a href="#" (click)="changeFilter.next(f)" [class.selected]="filter.title === f.title">{{f.title}}</a>
+  </li>
+</ul>

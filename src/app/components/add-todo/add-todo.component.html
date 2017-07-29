@@ -1,0 +1,3 @@
+<form [formGroup]="addTodoForm" (ngSubmit)="addTodo(addTodoForm)" novalidate>
+  <input name="newTodo" type="text" placeholder="Add todo.." formControlName="newTodo" class="new-todo">
+</form>
